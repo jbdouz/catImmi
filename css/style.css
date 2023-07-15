@@ -14,12 +14,12 @@ nav {
 
 /* IMG SYTLES */
 .cat-display {
-  margin: 20px;
+  margin: 2vw;
 }
 
 .cat-display img {
-  display: inline;
-  width: 24%;
+  float: left;
+  width: 25%;
 }
 
 img {
