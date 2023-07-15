@@ -17,17 +17,22 @@ nav {
   margin: 2vw;
 }
 
+img {
+  width: 100%;
+}
+
 .cat-display img {
   float: left;
   width: 25%;
 }
 
-img {
-  width: 100%;
+/* STEPS STYLE */
+.steps-wrapper {
+  clear: left;
 }
 
 .steps {
-  border: 1px solid orange;
+  border: 3px solid powderblue;
   margin: 10px auto;
   height: 20vh;
 }
