@@ -15,6 +15,9 @@ nav {
 /* IMG SYTLES */
 .cat-display {
   margin: 2vw;
+  background-image: url(../images/DSCF0097.jpg);
+  background-size: 25%;
+  height: 180px;
 }
 
 img {
@@ -34,16 +37,36 @@ img {
 .steps {
   border: 3px solid powderblue;
   margin: 10px auto;
-  height: 20vh;
 }
 
 h2 {
   margin: 5px;
 }
-
-.step-content {
-  border: 1px dashed orange;
-  margin: 5px;
-  height: 75%;
-  overflow: scroll;
+details {
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    padding: 0.5em 0.5em 0;
+    margin: 10px;
 }
+
+details > summary {
+    font-weight: bold;
+    margin: -0.5em -0.5em 0;
+    padding: 0.5em;
+    cursor: zoom-in;
+}
+
+details[open] {
+    padding: 0.5em;
+}
+
+details[open] summary {
+    border-bottom: 1px solid #aaa;
+    margin-bottom: 0.5em;
+}
+/* .step-content { */
+/*   border: 1px dashed blue; */
+/*   margin: 5px; */
+/*   height: 75%; */
+/*   overflow: scroll; */
+/* } */
