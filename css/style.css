@@ -8,8 +8,20 @@ h1 {
   text-align: center;
 }
 
+
 a {
-  color: navy;
+  color: cyan;
+  text-decoration-line: none;
+  transition: all .9s;
+}
+a:hover {
+  text-decoration-line: underline;
+  color: magenta;
+}
+a:visited {
+  color: initial;
+  text-decoration-line: none;
+  opacity: 0.5;
 }
 
 /* NAVIGATION STYLE */
@@ -52,10 +64,10 @@ img {
   position: relative;
   display: inline-block;
   cursor: help;
+  margin: 10px 0;
 }
-
-.step-content-itemized:hover::after {
-  content: attr(data-info);
+.step-content-itemized .post-it-popout {
+  visibility: hidden;
   position: absolute;
   top: 100%;
   left: 50%;
@@ -68,32 +80,39 @@ img {
   margin-top: 10px;
   white-space: nowrap;
   z-index: 1;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.3s linear;
+}
+
+.step-content-itemized:hover .post-it-popout {
+  opacity: 1;
+  visibility: visible;
 }
 
 h2 {
   margin: 5px;
 }
 details {
-    border: 1px solid #aaa;
-    border-radius: 4px;
-    padding: 0.5em 0.5em 0;
-    margin: 10px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  padding: 0.5em 0.5em 0;
+  margin: 10px;
 }
 
 details > summary {
-    font-weight: bold;
-    margin: -0.5em -0.5em 0;
-    padding: 0.5em;
-    cursor: zoom-in;
+  font-weight: bold;
+  margin: -0.5em -0.5em 0;
+  padding: 0.5em;
+  cursor: zoom-in;
 }
 
 details[open] {
-    padding: 0.5em;
+  padding: 0.5em;
 }
 
 details[open] summary {
-    border-bottom: 1px solid #aaa;
-    margin-bottom: 0.5em;
+  border-bottom: 1px solid #aaa;
+  margin-bottom: 0.5em;
 }
 /* .step-content { */
 /*   border: 1px dashed blue; */
