@@ -1,10 +1,15 @@
 /* OVERALL STYLES */
 body {
   background-color: orange;
+  font-size: 18px;
 }
 
 h1 {
   text-align: center;
+}
+
+a {
+  color: navy;
 }
 
 /* NAVIGATION STYLE */
@@ -37,6 +42,32 @@ img {
 .steps {
   border: 3px solid powderblue;
   margin: 10px auto;
+}
+
+
+.step-content-itemized::before {
+  content: "▶ ";
+}
+.step-content-itemized {
+  position: relative;
+  display: inline-block;
+  cursor: help;
+}
+
+.step-content-itemized:hover::after {
+  content: attr(data-info);
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ffff88;
+  color: black;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 10px;
+  white-space: nowrap;
+  z-index: 1;
 }
 
 h2 {
