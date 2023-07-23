@@ -2,6 +2,7 @@
 body {
   background-color: orange;
   font-size: 18px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 h1 {
@@ -29,7 +30,6 @@ header {
   background-color: #22a699;
   color: whitesmoke;
   position: fixed;
-  flex-grow: 1;
   width: 100vw;
   height: 20vh;
   z-index: 20;
@@ -39,13 +39,14 @@ header {
 
 .header-logo {
   background-color: transparent;
-  box-sizing: border-box;
-  display: block;
+  display: inline-block;
   position: relative;
-  padding: 5vh 0vh;
+  top: 10vh;
+  left: 3vw;
+  transform: translate(0, -50%);
 }
 #logo-image {
-  width: 10vh;
+  width: 15vh;
 }
 .header-nav {
   float: right;
@@ -53,7 +54,7 @@ header {
 }
 .header-nav li {
   display: inline-block;
-  padding-left: 5rem;
+  padding-left: 3rem;
   border-left: 1px solid orange;
 }
 .header-nav a, .footer-nav a {
@@ -78,24 +79,21 @@ footer {
 /* CONTENT STYLES */
 .content-wrapper {
   margin-top: 20vh;
-  padding-top: 2vh;
 }
 
 /* IMG SYTLES */
-.cat-display {
-  margin: 2vw;
+.hero {
+  margin: 0;
   background-image: url(../images/DSCF0097.jpg);
   background-size: 100%;
   height: 260px;
 }
+.hero > h1 {
+  padding-top: 2rem;
+}
 
 img {
   width: 100%;
-}
-
-.cat-display img {
-  float: left;
-  width: 25%;
 }
 
 /* STEPS STYLE */
@@ -237,9 +235,9 @@ details[open] summary {
   border-bottom: 1px solid #aaa;
   margin-bottom: 0.5em;
 }
-/* .step-content { */
-/*   border: 1px dashed blue; */
-/*   margin: 5px; */
-/*   height: 75%; */
-/*   overflow: scroll; */
-/* } */
+
+/* ------------------------------------------------------------------- */
+/* TOTURIAL STYLES */
+.video-wrapper {
+  margin: 0 auto;
+}
